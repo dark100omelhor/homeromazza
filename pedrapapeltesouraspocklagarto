@@ -1,0 +1,133 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 13 10:25:27 2015
+
+@author: Homero
+"""
+
+from random import randint
+n1=0
+n2=0
+
+print ("Bem vindo ao jokenpo do Big Bang Theory!!")
+while (n1<3 and n2<3):
+
+    jogador1=input('digite sua jogada')
+    jogador2=randint(1,5)
+    if (jogador2==1):
+        jogador2='tesoura'
+    elif(jogador2==2):
+        jogador2='papel'
+    elif(jogador2==3):
+        jogador2='pedra'
+    elif(jogador2==4):
+        jogador2='spock'
+    else:
+        jogador2='lagarto'
+    if(jogador1=='pedra' and jogador2=='tesoura'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='pedra' and jogador2=='lagarto'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='lagarto' and jogador2=='spock'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='lagarto' and jogador2=='papel'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='spock' and jogador2=='tesoura'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='spock' and jogador2=='pedra'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='tesoura' and jogador2=='papel'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='tesoura' and jogador2=='lagarto'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='papel' and jogador2=='pedra'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador1=='papel' and jogador2=='spock'):
+        print('jogador1 vence')
+        n1=n1+1
+        n2=0
+    elif(jogador2=='pedra' and jogador1=='tesoura'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='pedra' and jogador1=='lagarto'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='lagarto' and jogador1=='spock'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='lagarto' and jogador1=='papel'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='spock' and jogador1=='tesoura'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='spock' and jogador1=='pedra'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='tesoura' and jogador1=='papel'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='tesoura' and jogador1=='lagarto'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='papel' and jogador1=='pedra'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='papel' and jogador1=='spock'):
+        print('jogador2 vence')
+        n2=n2+1
+        n1=0
+    elif(jogador2=='papel' and jogador1=='papel'):
+        print('empatou')
+        n2=0
+        n1=0
+    elif(jogador2=='tesoura' and jogador1=='tesoura'):
+        print('empatou')
+        n2=0
+        n1=0
+    elif(jogador2=='pedra' and jogador1=='pedra'):
+        print('empatou')
+        n2=0
+        n1=0
+    elif(jogador2=='spock' and jogador1=='spock'):
+        print('empatou')
+        n2=0
+        n1=0
+    elif(jogador2=='lagarto' and jogador1=='lagarto'):
+        print('empatou')
+        n2=0
+        n1=0
+    else:  
+        print(' Voce digitou algo invalido')
+         
+if (n1==3):
+    print ('jogador1 venceu!')
+if (n2==3):
+    print ('jogador2 venceu!')
